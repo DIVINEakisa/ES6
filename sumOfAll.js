@@ -3,7 +3,8 @@ let sumOfNumber = (arr) => {
     return a + b;
   }, 0);
   let avg = sum / arr.length;
-  let min = Math.min(...arr);
+  let min = parseFloat(Math.min(...arr).toFixed(2));
+
   let max = Math.max(...arr);
   return { sum, avg, min, max };
 };
