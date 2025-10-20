@@ -1,3 +1,7 @@
+// Create a class Car with brand, model, and year.
+// Add a method displayInfo() that shows all details.
+// Default Parameters:
+// Modify the Car class so that if year is not provided, it defaults to 2020.
 class Car {
   constructor(brand, model, year = 2020) {
     this.brand = brand;
