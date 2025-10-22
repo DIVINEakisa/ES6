@@ -7,7 +7,7 @@
 // Circle A = pi * (r)square
 // Triangle  A = 1/2 b * h
 class Base {
-  constructor(b, h, l, w, pi = 3.14, r) {
+  constructor(b, h, l, w, pi, r) {
     this.b = b;
     this.h = h;
     this.l = l;
@@ -16,7 +16,13 @@ class Base {
     this.r = r;
   }
   area(a, b) {
-    console.log(a * b);
+    if (this.b === a && this.h === b) {
+      console.log((1 / 2) * (a * b));
+    } else if (this.l === a && this.w === b) {
+      console.log(a * b);
+    } else {
+      console.log(a * b ** 2);
+    }
   }
 }
 class Rectangle extends Base {
@@ -46,7 +52,8 @@ class Triangle extends Base {
 const newRect = new Rectangle(5, 3);
 newRect.area();
 
-const newCirc = new Circle(2, 3);
+const newCirc = new Circle(3.14, 3);
+
 newCirc.area();
 const newTrian = new Triangle(4, 6);
 newTrian.area();
