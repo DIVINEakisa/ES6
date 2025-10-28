@@ -5,6 +5,6 @@ let ObjectDestr = (student) => {
     course: "IT",
   };
   let { name, course } = student;
-  return { name, course };
+  return name, course;
 };
 console.log(ObjectDestr());
