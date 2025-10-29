@@ -18,5 +18,5 @@ function* getEmployee() {
 const generatorIteration = getEmployee();
 let result = generatorIteration.next();
 result.value; // "the function has started"
-genratorIteration.next(); // "Amanda"
-genratorIteration.next();
+generatorIteration.next(); // "Amanda"
+generatorIteration.next();
